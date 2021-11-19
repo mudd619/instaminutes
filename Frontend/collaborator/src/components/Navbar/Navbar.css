@@ -1,0 +1,48 @@
+.navbar-parentContainer{
+    width: 90%;
+    height: 60px;
+    /* border: 1px solid black; */
+    margin: auto;
+    background-color: #EFAE4A;
+    display: flex;
+    box-shadow: 2px 2px 8px 0px #e6e6e6;
+}
+.navbar--logoDiv{
+    height: 60px;
+    width: 14%;
+    /* border: 1px solid blue; */
+}
+.navbar--logoDiv img{
+    height: 100px;
+    width: 100%;
+    margin-top: -20px;
+}
+.navbar--profileDiv{
+    height: 60px;
+    width: 4%;
+    /* border: 1px solid brown; */
+    margin: auto;
+    margin-right: 2%;
+}
+.navbar--AccountCircle{
+    height: 40px !important;
+    width: 40px !important;
+    margin-top: -3px;
+    color: white;
+}
+.navbar--options{
+    height: 60px;
+    width: 40%;
+    /* border: 1px solid black; */
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 40%;
+    font-family: sans-serif;
+    color: rgb(238, 238, 238);
+}
+.navbar--createAvailability{
+    color: rgb(221, 4, 4);
+    font-family: sans-serif;
+}

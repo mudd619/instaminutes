@@ -1,0 +1,12 @@
+.landingPage--feedContainer{
+    height: 700px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}
+.landigngPage--searchOptionDiv{
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid green;
+}

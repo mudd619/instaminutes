@@ -1,9 +1,11 @@
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import Feed from "./components/Feed/Feed";
 
 function App() {
   return (
     <div className="App">
-     this is home page
+     <Navbar/>
+     <Feed/>
     </div>
   );
 }
