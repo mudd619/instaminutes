@@ -1,0 +1,119 @@
+.Contact-parentDiv{
+    height: 300px;
+    width: 40%;
+    border: 1px solid #D4D4D4;
+    box-shadow: 2px 2px 8px 0px #E6E6E6;
+    margin: auto;
+}
+.options-parentDiv{
+    height: 100px;
+    width: 70%;
+    /* border: 1px solid #D4D4D4;
+    box-shadow: 2px 2px 8px 0px #E6E6E6; */
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+.contact-options-button-chat{
+    height: 40px;
+    width: 40%;
+    background-color: #EFAE4A;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    margin-left: 5%;
+    font-weight: 600;
+    margin-top: 1px;
+    box-shadow: 2px 2px 8px 0px #E6E6E6;
+}
+.Contact-option-name{
+    color: #EE9D25;
+    font-family: sans-serif;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.contact-name-numberDiv{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid rgb(214, 214, 214); */
+    text-align: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: rgb(112, 112, 112);
+}
+.contact-name-numberDiv-span{
+    margin-left: 5%;
+    font-family: sans-serif;
+    color: rgb(112, 112, 112);
+}
+
+.chat-parentDiv{
+    height: 500px;
+    width: 70%;
+    margin:auto;
+    border: 1px solid #D4D4D4;
+    box-shadow: 2px 2px 8px 0px #E6E6E6;
+}
+.chat-subDiv{
+    height: 80px;
+    width: 40%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(241, 241, 241);
+    margin-left: 5%;
+}
+.chat-username{
+    height: 25px;
+    width: 25%;
+    border-radius: 20px;
+    background-color: #EFAE4A;
+}
+.chat-username p{
+    color: white;
+    font-style: italic;
+    font-family: sans-serif;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+.chat-message{
+    height: 40px;
+    width: 70%;
+    border: 1px solid rgb(189, 189, 189);
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+.chat-message p{
+    color: rgb(110, 110, 110);
+    font-style: italic;
+    font-family: sans-serif;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+.ChatInput-div{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin-top: 370px;
+    margin-left: 25%;
+    display: flex;
+}
+.ChatInput-div input{
+    height: 50px;
+    width: 82%;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+.ChatInput-div input:focus{
+    outline: none;
+}
+.ChatInput-div button{
+    width: 18%;
+    border-radius: 30px;
+    border:none;
+    background-color: #EFAE4A;
+    color: white;
+    font-family: 700;
+}

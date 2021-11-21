@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import "./Navbar.css";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -6,10 +6,13 @@ import IconButton from "@mui/material/IconButton";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { Link, useNavigate } from 'react-router-dom'; 
 
 export default function Navbar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const navigate = useNavigate();
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -18,21 +21,39 @@ export default function Navbar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  let data = JSON.parse(localStorage.getItem("userT"));
+  
+  const handlelogin = ()=>{
+    if(data === null || data.id === undefined){
+      alert("Login to proceed")
+      return navigate("/login")
+    }
+    navigate("/registration")
+
+  }
+
+  const handleLogout = ()=>{
+    localStorage.setItem("userT",null);
+    navigate("/")
+    setAnchorEl(null);
+  }
+
   return (
     <>
       <div className="navbar-parentContainer">
         <div className="navbar--logoDiv">
           <a href="">
-            <img
+            <Link to="/"><img
               src="https://i.ibb.co/9W9GDXG/transparent-logo.png"
               alt="transparent-logo"
-            />
+            /></Link>
           </a>
         </div>
         <div className="navbar--options">
           <h4>About us</h4>  
           <h4>Contact us</h4>
-          <h4 className="navbar--createAvailability">Create Your Availability</h4>
+          <h4 className="navbar--createAvailability" onClick={handlelogin}>Create Your Availability</h4>
         </div>
         <div className="navbar--profileDiv">
           {auth && (
@@ -45,8 +66,9 @@ export default function Navbar() {
                 onClick={handleMenu}
                 color="inherit"
               >
-                <AccountCircle className="navbar--AccountCircle" />
+                <AccountCircle className="navbar--AccountCircle" /> 
               </IconButton>
+              {data ? <div>{data.name}</div> : ""}
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}
@@ -62,9 +84,16 @@ export default function Navbar() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                { !data ? <>
+                          <MenuItem onClick={handleClose}><Link to="/signup">SignUp</Link></MenuItem>
+                          <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
+                      </> : 
+                      <>
+                          <MenuItem onClick={handleClose}><Link to="/profile">Profile</Link></MenuItem>
+                          <MenuItem onClick={handleLogout}>LogOut</MenuItem>
+                          </> }
               </Menu>
+              
             </div>
           )}
         </div>
