@@ -68,8 +68,10 @@ export default function Login() {
             autoComplete="current-password"
             onChange={handleChange}
           />
-           <button onClick={handleSubmit} className="login_button_bh">LogIn</button>
+          <div className="parent_login_btn_bh">
+          <button onClick={handleSubmit} className="login_button_bh">LogIn</button>
            <Link to="/signup"><button className="login_button_bh">SignUp</button></Link>
+          </div>
         </div>
         
       </Box>

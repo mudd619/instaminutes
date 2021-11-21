@@ -16,4 +16,8 @@
     font-weight: 600;
     font-size:17px;
     margin-bottom:20px;
+    margin-left:80px;
+}
+.parent_login_btn_bh{
+    justify-content:center;
 }

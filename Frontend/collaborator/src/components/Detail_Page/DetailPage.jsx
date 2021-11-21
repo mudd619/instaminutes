@@ -44,9 +44,9 @@ function DetailPage() {
         <div className="parent_div_bh">
           <h1>{data.Company}</h1>
            <div className="image_div_bh">
-               <img src="https://light-trucks.tatamotors.com/blog/wp-content/uploads/2018/11/best-lighttruck-loading-transporting-goods.jpg" alt="loading" />
-               <img src="https://light-trucks.tatamotors.com/blog/wp-content/uploads/2018/11/best-lighttruck-loading-transporting-goods.jpg" alt="loading" />
-               <img src="https://light-trucks.tatamotors.com/blog/wp-content/uploads/2018/11/best-lighttruck-loading-transporting-goods.jpg" alt="loading" />
+               <img src="https://5.imimg.com/data5/GT/BM/HN/SELLER-5209781/32-feet-mxl-container-transport-service-500x500.jpg" alt="loading" />
+               <img src="https://5.imimg.com/data5/GT/BM/HN/SELLER-5209781/32-feet-mxl-container-transport-service-500x500.jpg" alt="loading" />
+               <img src="https://5.imimg.com/data5/GT/BM/HN/SELLER-5209781/32-feet-mxl-container-transport-service-500x500.jpg" alt="loading" />
            </div>
 
            <div className="details_div_bh">

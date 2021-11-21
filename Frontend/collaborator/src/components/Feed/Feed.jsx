@@ -60,8 +60,8 @@ export default function Feed() {
       </div>
       <div className="Search--fromdiv">
         <div className="Search--fromdiv-iconDiv">
-          <AddLocationIcon/>
-        </div>
+          <AddLocationIcon className="AddLocationIcon"/>
+        </div><hr />
         <div className="Search--fromdiv-inputFeildDiv">
           <input onChange={handleInp} name="from" placeholder="From"></input>
         </div>
@@ -73,8 +73,8 @@ export default function Feed() {
       
       <div className="Search--fromdiv">
         <div className="Search--fromdiv-iconDiv">
-          <AddLocationIcon/>
-        </div>
+          <AddLocationIcon className="AddLocationIcon"/>
+        </div><hr />
         <div className="Search--fromdiv-inputFeildDiv">
           <input onChange={handleInp} name="to" placeholder="To"></input>
         </div>
@@ -115,7 +115,7 @@ export default function Feed() {
            <ArrowDropDownIcon className="ArrowDropDownIcon"/>
         </div>
       </div> */}
-      <button onClick={handleSubmit} >Search</button>
+      <button className="Search_fromdiv_btn" onClick={handleSubmit} >Search</button>
     </div><hr className="hr"/>
       <div className="landingPage--feedContainer">
         <VehicleAvailable valuu={valuu} />

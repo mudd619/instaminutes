@@ -111,9 +111,11 @@ export default function FormPropsTextFields() {
      
     </Box>
    
+    <div className="sign_up_button_div_bh">
     <button onClick={handleSubmit} className="signup_button_bh">Submit</button>
 
     <Link to="/login"><button className="signup_button_bh">Login</button></Link>
+    </div>
    </div>
   );
 }

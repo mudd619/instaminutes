@@ -50,18 +50,16 @@ export default function VehicleAvailable({valuu}) {
                                     <span>{el.vechileName}</span>
                                 </div>
                                 <div style={{margin:"5px 0px 0px 15px"}}>
-                                    <p>No. <span className="rate-div-span">{el.vechileNo}</span></p>
+                                    <p> Registration No. <span className="rate-div-span">{el.vechileNo}</span></p>
                                 </div>
                                 <div className="Vechicle--rateDiv">
-                                    <p>Rs.<span className="rate-div-span">{el.charges} /Km</span></p>
+                                    <p>Charges Per km. <span className="rate-div-span">{el.charges} /Km</span></p>
                                 </div>
-                                <div >
-                                    From : {el.departurePlace} ----
-                                    To : {el.arrivalPlace}
+                                <div className="Vechicle--from-to-to-Div">
+                                    From : <span className="rate-div-span">{el.departurePlace} --</span>
+                                    To : <span className="rate-div-span">{el.arrivalPlace}  </span>
                                 </div>
-                                
-                                    
-                                
+                                  
                             </div>
                             <div className="button-div">
                                 <Link to={`/detail/${el._id}`}><button>Available</button></Link>
