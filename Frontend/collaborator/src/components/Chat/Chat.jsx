@@ -7,7 +7,7 @@ import "./Chat.css";
 
 function Chat(){
 
-    let locall = JSON.parse(localStorage.getItem("userT"));
+    let locall = JSON.parse(localStorage.getItem("name"));
 
     const [loading,setLoading] = useState(false);
     const [error ,setError] = useState(false)
@@ -39,7 +39,7 @@ function Chat(){
         setLoading(true)
         axios.post("http://localhost:2334/message",{
             ...inp,
-            username : locall.name
+            username : locall
         })
         .then((res)=>{
             console.log("sent");
